@@ -10,9 +10,7 @@ It is designed for photographers, illustrators, printmakers and graphic artists 
 
 ## Download
 
-[Download the Windows V1 package](./Orion4D_Halftone_Studio_V1_Multilingual_Windows.zip)
-
-Alternatively, download the latest package from the repository's [Releases](../../releases) page when available.
+download the latest package from the repository's [Releases](../../releases) page when available.
 
 ## Main features
 
