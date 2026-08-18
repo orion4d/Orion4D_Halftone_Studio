@@ -10,7 +10,9 @@ It is designed for photographers, illustrators, printmakers and graphic artists 
 
 ## Download
 
-download the latest package from the repository's [Releases](../../releases) page when available.
+[Download Orion4D Halftone Studio V1 for Windows](https://github.com/orion4d/Orion4D_Halftone_Studio/releases/latest/download/Orion4D_Halftone_Studio_V1_Multilingual_Windows.zip)
+
+Portable Windows x64 application · No installation · No Python required
 
 ## Main features
 
