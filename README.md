@@ -1,5 +1,7 @@
 # Orion4D Halftone Studio
 
+<img width="2537" height="1392" alt="image" src="https://github.com/user-attachments/assets/729ad158-6a7f-48ab-9ed7-d40e077893a5" />
+
 **Orion4D Halftone Studio V1** is a portable Windows application for advanced black-and-white conversion, vector halftone patterns and pixel-based dithering.
 
 It is designed for photographers, illustrators, printmakers and graphic artists who want to create monochrome and halftone artwork locally, without uploading their images to an online service.
