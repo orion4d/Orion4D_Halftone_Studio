@@ -1,0 +1,339 @@
+# LICENCE D’UTILISATION — ORION4D HALFTONE STUDIO
+
+
+
+Version 1.0 — 2026
+
+
+
+Copyright © 2026 Philippe Joye / Orion4D
+
+Tous droits réservés.
+
+
+
+## 1. Objet de la licence
+
+
+
+Orion4D Halftone Studio, ci-après désigné « le Logiciel », est distribué gratuitement selon le principe du donationware.
+
+
+
+L’utilisateur peut soutenir volontairement son développement par un don. Aucun don n’est obligatoire pour télécharger, installer ou utiliser le Logiciel, et l’absence de don ne limite aucune de ses fonctionnalités.
+
+
+
+Le Logiciel demeure la propriété exclusive de Philippe Joye / Orion4D. La présente licence accorde uniquement un droit d’utilisation et n’entraîne aucun transfert de propriété sur le Logiciel, son code source, son interface, ses éléments graphiques ou sa documentation.
+
+
+
+## 2. Licence accordée
+
+
+
+Sous réserve du respect de la présente licence, l’auteur accorde à l’utilisateur une licence :
+
+
+
+* gratuite ;
+
+* non exclusive ;
+
+* non transférable ;
+
+* valable dans le monde entier ;
+
+* sans limitation de durée, sauf résiliation dans les conditions prévues ci-dessous.
+
+
+
+L’utilisateur est autorisé à :
+
+
+
+* télécharger et installer le Logiciel ;
+
+* utiliser le Logiciel sur un ou plusieurs ordinateurs dont il est propriétaire ou utilisateur légitime ;
+
+* utiliser le Logiciel à des fins personnelles, éducatives, artistiques, professionnelles ou commerciales ;
+
+* réaliser une copie de sauvegarde lorsque celle-ci est nécessaire à la conservation ou à l’utilisation normale du Logiciel.
+
+
+
+Une entreprise ou une organisation peut utiliser le Logiciel dans le cadre de ses activités internes, sous réserve que chaque copie ait été obtenue légitimement et que le Logiciel ne soit pas redistribué en dehors de cette organisation.
+
+
+
+## 3. Restrictions concernant le Logiciel
+
+
+
+Sauf autorisation écrite préalable de l’auteur, il est interdit de :
+
+
+
+* vendre, louer, sous-licencier ou commercialiser le Logiciel ;
+
+* redistribuer, publier, héberger ou mettre le Logiciel à disposition de tiers, gratuitement ou contre paiement ;
+
+* intégrer le Logiciel lui-même, son exécutable ou son code source à un autre logiciel, produit, service ou offre commerciale ;
+
+* modifier puis redistribuer le Logiciel ;
+
+* supprimer ou modifier les mentions de copyright, de licence, de marque ou d’attribution ;
+
+* présenter le Logiciel comme étant sa propre création ;
+
+* utiliser le nom Orion4D, le nom Orion4D Halftone Studio, son logo ou ses éléments d’identité visuelle d’une manière susceptible de suggérer une affiliation, une certification ou une approbation non autorisée ;
+
+* contourner les dispositifs techniques destinés à protéger ou à conditionner le fonctionnement du Logiciel.
+
+
+
+Les restrictions de cette section s’appliquent au Logiciel lui-même et non aux images ou fichiers produits avec celui-ci.
+
+
+
+Aucune disposition de la présente licence ne limite les droits impérativement accordés par la législation applicable, notamment concernant la copie de sauvegarde, l’observation ou l’étude du fonctionnement du Logiciel, ainsi que les opérations strictement nécessaires à l’interopérabilité d’un logiciel créé indépendamment.
+
+
+
+## 4. Fichiers produits avec le Logiciel
+
+
+
+L’auteur ne revendique aucun droit de propriété intellectuelle sur les images, effets de trame, fichiers SVG, fichiers PNG, graphismes ou autres fichiers produits par l’utilisateur au moyen du Logiciel, ci-après désignés « les Fichiers produits ».
+
+
+
+Sous réserve des droits appartenant éventuellement à des tiers, l’utilisateur peut librement :
+
+
+
+* utiliser les Fichiers produits à des fins personnelles ou professionnelles ;
+
+* les modifier et les reproduire ;
+
+* les publier et les diffuser ;
+
+* les intégrer à d’autres créations ou produits ;
+
+* les vendre, les concéder sous licence ou les monétiser ;
+
+* les exploiter commercialement dans le monde entier ;
+
+* les utiliser sans verser de redevance à l’auteur du Logiciel ;
+
+* les utiliser sans obligation de mentionner Orion4D ou l’auteur du Logiciel.
+
+
+
+L’auteur ne peut toutefois garantir qu’un Fichier produit constitue une œuvre protégeable par le droit d’auteur ou qu’il est libre de tout droit appartenant à un tiers.
+
+
+
+L’utilisateur reste seul responsable des images sources, photographies, dessins, logos, polices, marques et autres éléments importés ou traités avec le Logiciel. Il lui appartient d’obtenir les droits et autorisations nécessaires à leur utilisation, leur transformation et leur diffusion.
+
+
+
+## 5. Composants appartenant à des tiers
+
+
+
+Le Logiciel peut inclure ou utiliser des composants, bibliothèques ou technologies appartenant à des tiers, notamment Electron, Chromium, Node.js ou des bibliothèques JavaScript.
+
+
+
+Ces composants restent soumis à leurs licences respectives. La présente licence ne remplace pas, ne limite pas et ne modifie pas les droits ou obligations résultant de ces licences tierces.
+
+
+
+Les mentions de copyright et fichiers de licence applicables aux composants tiers doivent être conservés lorsqu’ils accompagnent la distribution autorisée du Logiciel.
+
+
+
+## 6. Mises à jour et assistance
+
+
+
+L’auteur peut proposer des corrections, mises à jour ou nouvelles versions du Logiciel, mais n’est pas tenu de le faire.
+
+
+
+L’auteur peut modifier, interrompre ou abandonner le développement ou la mise à disposition du Logiciel à tout moment.
+
+
+
+Sauf engagement écrit distinct, la présente licence ne crée aucune obligation :
+
+
+
+* d’assistance technique ;
+
+* de maintenance ;
+
+* de correction des erreurs ;
+
+* de compatibilité avec de futures versions des systèmes d'exploitation ;
+
+* de conservation des fonctionnalités existantes ;
+
+* de fourniture de mises à jour.
+
+
+
+Une mise à jour peut être soumise à une nouvelle version de la présente licence. L’utilisateur reste libre de ne pas installer cette mise à jour et de continuer à utiliser une version antérieure obtenue légitimement, dans les limites de la licence qui l’accompagnait.
+
+
+
+## 7. Absence de garantie
+
+
+
+Le Logiciel est fourni « en l’état » et « selon disponibilité ».
+
+
+
+Dans les limites autorisées par la législation applicable, l’auteur ne fournit aucune garantie expresse ou implicite concernant notamment :
+
+
+
+* l’absence d’erreurs ou d’interruptions ;
+
+* la compatibilité avec un matériel, un système ou un logiciel particulier ;
+
+* l’adéquation à un besoin professionnel ou artistique particulier ;
+
+* la qualité ou la conformité des Fichiers produits ;
+
+* la conservation des données, réglages ou fichiers ;
+
+* l’absence de perte de qualité lors du traitement ou de l’exportation ;
+
+* la disponibilité future du Logiciel ou de ses mises à jour.
+
+
+
+L’utilisateur doit conserver des copies de sauvegarde de ses images sources, de ses presets, de ses réglages et de ses fichiers importants.
+
+
+
+## 8. Limitation de responsabilité
+
+
+
+Dans les limites autorisées par la législation applicable, l’auteur ne pourra être tenu responsable des dommages indirects ou immatériels résultant de l’installation ou de l’utilisation du Logiciel, notamment :
+
+
+
+* perte ou corruption de données ;
+
+* perte de fichiers ou de réglages ;
+
+* perte d’exploitation, de chiffre d’affaires ou de bénéfices ;
+
+* interruption d’activité ;
+
+* perte d’une opportunité commerciale ;
+
+* incompatibilité matérielle ou logicielle ;
+
+* réclamation formulée par un tiers concernant un contenu traité par l’utilisateur.
+
+
+
+L’utilisateur demeure responsable de la vérification des Fichiers produits avant leur publication, leur impression, leur vente ou leur utilisation professionnelle.
+
+
+
+Aucune disposition de la présente licence ne limite ou n’exclut une responsabilité qui ne pourrait légalement être limitée ou exclue, ni les droits impératifs dont bénéficie un consommateur en vertu de la législation applicable.
+
+
+
+## 9. Résiliation
+
+
+
+La présente licence prend effet dès le téléchargement, l’installation ou l’utilisation du Logiciel.
+
+
+
+Elle est automatiquement résiliée si l’utilisateur enfreint l’une de ses dispositions.
+
+
+
+En cas de résiliation, l’utilisateur doit cesser d’utiliser le Logiciel et supprimer les copies en sa possession, à l’exception des copies dont la conservation serait imposée par la loi.
+
+
+
+La résiliation n’affecte pas les droits déjà acquis sur les Fichiers produits légitimement créés avant la résiliation.
+
+
+
+Les dispositions relatives à la propriété du Logiciel, aux Fichiers produits, aux composants tiers, aux garanties, à la responsabilité et au droit applicable continuent de produire leurs effets après la résiliation.
+
+
+
+## 10. Droit applicable
+
+
+
+La présente licence est régie par le droit français.
+
+
+
+Toutefois, ce choix ne prive pas un consommateur des dispositions impératives protectrices dont il bénéficie dans son pays de résidence.
+
+
+
+En cas de différend, les parties sont invitées à rechercher une solution amiable avant toute procédure judiciaire. À défaut d’accord, les règles de compétence juridictionnelle prévues par la législation applicable s’appliquent.
+
+
+
+## 11. Divisibilité
+
+
+
+Si une disposition de la présente licence est déclarée invalide, illégale ou inapplicable, les autres dispositions restent en vigueur.
+
+
+
+La disposition concernée doit, dans la mesure du possible, être interprétée ou adaptée afin de respecter au mieux son objectif initial tout en restant conforme à la législation applicable.
+
+
+
+## 12. Intégralité de l’accord
+
+
+
+La présente licence constitue l’accord relatif à l’utilisation du Logiciel entre l’auteur et l’utilisateur, sauf existence d’un accord écrit distinct signé par l’auteur.
+
+
+
+Toute autorisation exceptionnelle concernant la redistribution, l’intégration ou l’exploitation du Logiciel doit être accordée par écrit par Philippe Joye / Orion4D.
+
+
+
+## 13. Acceptation
+
+
+
+Le téléchargement, l’installation ou l’utilisation du Logiciel implique l’acceptation de la présente licence.
+
+
+
+Si l’utilisateur n’accepte pas ses conditions, il ne doit pas installer ou utiliser le Logiciel et doit supprimer les copies en sa possession.
+
+
+
+---
+
+
+
+Orion4D Halftone Studio
+
+Copyright © 2026 Philippe Joye / Orion4D
+
+Tous droits réservés. 
