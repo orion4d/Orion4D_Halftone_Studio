@@ -2,7 +2,7 @@
 
 <img width="2537" height="1392" alt="image" src="https://github.com/user-attachments/assets/729ad158-6a7f-48ab-9ed7-d40e077893a5" />
 
-**Orion4D Halftone Studio V1** is a portable Windows application for advanced black-and-white conversion, vector halftone patterns and pixel-based dithering.
+**Orion4D Halftone Studio** is a portable Windows application for advanced black-and-white conversion, vector halftone patterns and pixel-based dithering.
 
 It is designed for photographers, illustrators, printmakers and graphic artists who want to create monochrome and halftone artwork locally, without uploading their images to an online service.
 
@@ -10,7 +10,7 @@ It is designed for photographers, illustrators, printmakers and graphic artists 
 
 ## Download
 
-[Download Orion4D Halftone Studio V1 for Windows](https://github.com/orion4d/Orion4D_Halftone_Studio/releases/latest/download/Orion4D_Halftone_Studio_V1_Multilingual_Windows.zip)
+[Download Orion4D Halftone Studio V1.1 for Windows](https://github.com/orion4d/Orion4D_Halftone_Studio/releases/download/V1.1/Orion4D_Halftone_Studio_V1-1_Multilingual_Windows.zip)
 
 Portable Windows x64 application · No installation · No Python required
 
