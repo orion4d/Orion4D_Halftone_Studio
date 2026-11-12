@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Anleitung zu Orion4D Halftone Studio V2. Installation, Raster, Farbauszüge, JavaScript-Effekte, MCP und die 3D-Werkstatt.">
+  <meta name="theme-color" content="#171c17">
+  <!-- alternates:start -->
+  <link rel="alternate" hreflang="fr" href="../documentation.html">
+  <link rel="alternate" hreflang="en" href="../en/documentation.html">
+  <link rel="alternate" hreflang="de" href="documentation.html">
+  <link rel="alternate" hreflang="it" href="../it/documentation.html">
+  <link rel="alternate" hreflang="es" href="../es/documentation.html">
+  <link rel="alternate" hreflang="x-default" href="../documentation.html">
+  <!-- alternates:end -->
+  <title>Dokumentation — Orion4D Halftone Studio V2</title>
+  <link rel="icon" href="../assets/orion.png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <script src="../assets/site.js" defer></script>
+</head>
+<body class="docs">
+  <a class="skip" href="#contenu">Zum Inhalt</a>
+  <header class="site-head">
+    <div class="wrap head-inner">
+      <a class="brand" href="index.html" aria-label="Orion4D Halftone Studio, Startseite"><img src="../assets/orion.png" width="38" height="38" alt=""><span>Orion4D Halftone Studio <small>Bild- und Musteratelier · Lokale Verarbeitung</small></span></a>
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <div class="nav-tabs">
+          <a href="index.html#outils">Werkzeuge</a>
+          <a href="index.html#galerie">Galerie</a>
+          <a href="documentation.html" aria-current="page">Dokumentation</a>
+        </div>
+        <a class="nav-download" href="https://github.com/orion4d/Orion4D_Halftone_Studio/releases">Herunterladen</a>
+        <!-- languages:start -->
+        <details class="language-picker">
+          <summary aria-label="Sprache · Deutsch">Deutsch</summary>
+          <ul>
+            <li><a href="../documentation.html" lang="fr" hreflang="fr">Français</a></li>
+            <li><a href="../en/documentation.html" lang="en" hreflang="en">English</a></li>
+            <li><a href="documentation.html" lang="de" hreflang="de" aria-current="page">Deutsch</a></li>
+            <li><a href="../it/documentation.html" lang="it" hreflang="it">Italiano</a></li>
+            <li><a href="../es/documentation.html" lang="es" hreflang="es">Español</a></li>
+          </ul>
+        </details>
+        <!-- languages:end -->
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <div class="docs-hero">
+      <div class="wrap">
+        <p class="kicker"><span class="status-dot" aria-hidden="true"></span> V2.0.0</p>
+        <h1>Dokumentation</h1>
+        <p>Hier finden Sie Schritte und Dateiformate für Ihr Projekt, von den Rastereinstellungen bis zum Export für Druck und 3D-Modelle.</p>
+      </div>
+    </div>
+    <div class="wrap docs-layout">
+      <aside class="docs-aside">
+        <div class="docs-search" hidden>
+          <label for="doc-search">Anleitung durchsuchen</label>
+          <input type="search" id="doc-search" placeholder="Z. B. Rasterweite, SVG, 3D" autocomplete="off">
+          <p class="search-status" id="doc-status" role="status" data-one="{count} Kapitel gefunden" data-many="{count} Kapitel gefunden"></p>
+        </div>
+        <nav aria-label="Inhaltsverzeichnis der Dokumentation" class="docs-nav">
+          <p class="kicker">INHALT</p>
+          <a href="#installation">Installation und Updates</a>
+          <a href="#demarrer">Erste Schritte</a>
+          <a href="#retouche">Retusche und Tiefe</a>
+          <a href="#trames">Vektor- und Pixelpunkte</a>
+          <a href="#impression">Druck und Druckfarben</a>
+          <a href="#typographie">ASCII und Wortwolken</a>
+          <a href="#composition">Ebenen und Exportformate</a>
+          <a href="#motifs">Musterlabor</a>
+          <a href="#relief">3D-Werkstatt</a>
+          <a href="#javascript">JS-Effekte</a>
+          <a href="#mcp">Lokales MCP</a>
+          <a href="#lot">Stapelverarbeitung und Vorgaben</a>
+          <a href="#depannage">Fehlerbehebung</a>
+        </nav>
+      </aside>
+      <div class="docs-content">
+        <p class="no-results" hidden>Kein Kapitel passt zur Suche. Versuchen Sie „Druckfarbe“, „Ebene“ oder „Relief“.</p>
+        <article class="topic" id="installation">
+          <h2>Installieren oder aktualisieren</h2>
+          <ol>
+            <li>Laden Sie <code>Orion4D-Halftone-Studio-V2-Windows-x64.zip</code> von der Seite mit den GitHub-Veröffentlichungen herunter.</li>
+            <li>Entpacken Sie das Archiv in einen Ordner mit Schreibzugriff und starten Sie <code>Orion4D-Halftone-Studio-Portable-2.0.0.exe</code>. Die Anwendung ist portabel.</li>
+            <li>Lassen Sie <code>models/</code> neben der ausführbaren Datei, damit Freistellung und Tiefenkarten offline funktionieren.</li>
+            <li>Wählen Sie in den <strong>Einstellungen</strong> die Sprache, eine Oberflächenskalierung von 80 % bis 130 % und den Ausgabeordner. Klicken Sie auf <strong>settings.json speichern</strong>.</li>
+          </ol>
+          <p>Entpacken Sie ein Update in einen neuen Ordner und kopieren Sie die gewünschten Vorgaben, Schriftarten, SVGs und Einstellungen dorthin. Öffnen Sie <code>.orion4d</code>-Projekte über das Menü <strong>Datei</strong>.</p>
+          <p>Orion4D Halftone Studio ist kostenlos. Spenden sind freiwillig. Das Paket enthält die V2-Lizenz und die Hinweise zu Komponenten von Drittanbietern.</p>
+          <a class="button button-lime" href="https://github.com/orion4d/Orion4D_Halftone_Studio/releases">GitHub-Veröffentlichungen <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="topic" id="demarrer">
+          <h2>Das erste Raster erstellen</h2>
+          <p>Wechseln Sie den Modus in der oberen Leiste. Links stehen die Einstellungen, in der Mitte die Vorschau und rechts die Ebenen.</p>
+          <ol>
+            <li>Klicken Sie unter <strong>Einzelbild</strong> auf <strong>Bild öffnen / ersetzen</strong> und wählen Sie die Quelldatei.</li>
+            <li>Wählen Sie <strong>Vektorpunkte</strong> für als SVG exportierbare Formen oder <strong>Pixelpunkte</strong> für ein Rasterbild.</li>
+            <li>Stellen Sie Abstand und Form ein. Vergleichen Sie das Ergebnis über <strong>Vorher / Nachher</strong> mit der Quelle.</li>
+            <li>Wählen Sie oben Format und Ausgabegröße und klicken Sie auf <strong>Exportieren</strong>. Speichern Sie das Dokument, um die Einstellungen zu behalten.</li>
+          </ol>
+          <h3 id="dimensions">Eingabe- und Ausgabegröße</h3>
+          <p>Die <strong>Eingabegröße</strong> bestimmt die Arbeitsabmessungen vor der Verarbeitung. Behalten Sie die Originalgröße bei, wählen Sie 25 bis 200 % oder legen Sie die längste Seite auf einen Wert von 1.024 bis 8.192 px fest. Seitenverhältnis und Transparenz bleiben erhalten. Das Dokument behält das Originalbild.</p>
+          <div class="callout"><strong>In Arbeitsgröße exportieren</strong><p>Wählen Sie <strong>Original</strong> als Ausgabegröße, um die Arbeitsabmessungen zu übernehmen. Für andere Abmessungen wählen Sie eine feste Länge für die längste Seite oder ein Druckformat. Bei einer Größenänderung ist die längste Eingabeseite auf 8.192 px begrenzt.</p></div>
+          <figure class="doc-figure"><img src="../assets/interface-de.webp" width="1440" height="920" alt="Oberfläche von Orion4D Halftone Studio V2 mit Farbauszügen links, einer gerasterten Komposition in der Mitte und Ebenen rechts" loading="lazy"><figcaption>Einzelbild im Modus Erweitert. Die Eingabegröße steht in der oberen Leiste.</figcaption></figure>
+        </article>
+        <article class="topic" id="retouche">
+          <h2>Retusche und Tiefe</h2>
+          <p>Bereiten Sie mit der <strong>SW-Retusche</strong> die Töne für ein Schwarzweißraster vor. Achten Sie darauf, dass Schatten und Lichter die gewünschten Druckdetails behalten.</p>
+          <p>Die Freistellung verwendet lokale Modelle. Passen Sie Maskenschwelle und Kantenglättung an und exportieren Sie den Ausschnitt als PNG.</p>
+          <p>Erstellen oder importieren Sie unter <strong>Rasterrelief</strong> eine Tiefenkarte und aktivieren Sie das Relief. Stärke, Richtung und Glättung steuern die Verformung. Das Miniaturbild zeigt die Tiefenkarte, auch wenn die Arbeitsfläche das bearbeitete Bild anzeigt.</p>
+          <p>Erstellen Sie unter <strong>Normalenkarte</strong> Normalen aus der Tiefe oder importieren Sie eine PNG-Normalenkarte. Aktivieren Sie ihren Einfluss, um das Raster an die Oberfläche anzupassen.</p>
+        </article>
+        <article class="topic" id="trames">
+          <h2>Vektor- und Pixelpunkte</h2>
+          <h3>Vektorpunkte</h3>
+          <p>Stellen Sie Gitter, Abstand und Punktform ein. Die <strong>Vektorwerkstatt</strong> bietet auch durchgehende Schraffuren, adaptive Punktierung und Bézier-Konturen. Die Analysegenauigkeit bestimmt die Geometrie. Eine höhere Exportauflösung gibt sie feiner wieder.</p>
+          <p>Legen Sie eine eigene SVG-Form in <code>svg_dots/</code> neben der ausführbaren Datei ab. Wählen Sie den Stil für eigene SVGs und laden Sie die Formenliste neu.</p>
+          <h3>Pixelpunkte</h3>
+          <p>Stellen Sie Abtastung, Rasterverarbeitung und Mustererzeugung ein. Vergleichen Sie die Muster bei der vorgesehenen Exportgröße. PNG erhält das Rasterbild. RGB mit 1 Bit erzeugt ein Ergebnis nach Schwellenwert.</p>
+        </article>
+        <article class="topic" id="impression">
+          <h2>Druck und Druckfarben</h2>
+          <p>Öffnen Sie <strong>Erweitert → Separationen</strong>, wählen Sie <strong>Druck</strong> und dann CMYK, Zwei-, Drei- oder Mehrfarbdruck. Für vier bis acht Farben können Sie die Zuordnung berechnen oder ein ICC-Ausgabeprofil importieren.</p>
+          <p>Die Mehrfarbpalette beginnt mit CMYK, Orange und Grün. Sonderfarbpaletten bieten gemischte, pastellige, komplementäre und tertiäre Farben.</p>
+          <ol>
+            <li>Stellen Sie die <strong>Druckgröße</strong> ein, damit die Rasterweite zu den physischen Abmessungen passt.</li>
+            <li>Wählen Sie ein gemeinsames Muster, einen Abstand und eine Farbdeckung. Öffnen Sie eine Druckfarbe, um Muster, Kurve und Winkel anzupassen. <strong>Alle Kurven zurücksetzen</strong> stellt eine lineare Farbreaktion wieder her.</li>
+            <li>Vergleichen Sie gerasterte Muster mit den flächigen Auszügen. Übertragen Sie die Stufen in Ebenen oder exportieren Sie die Farbauszüge.</li>
+          </ol>
+          <div class="callout"><strong>Rasterweite und Abstand</strong><p>Bei gekoppelter Rasterweite aktualisiert eine Änderung das jeweils andere Feld. Der Abstand in Millimetern ist <code>25,4 ÷ lpi</code>. Bei 40 lpi beträgt er 0,635 mm. Bei einem stochastischen FM-Raster stellen Sie die Größe der Mikropunkte ein.</p></div>
+        </article>
+        <article class="topic" id="typographie">
+          <h2>ASCII und Wortwolken</h2>
+          <h3>ASCII</h3>
+          <p>Wählen Sie Stil und Zeichensatz und passen Sie Spalten und Anordnung an. Verwenden Sie PNG für das gerenderte Bild, SVG für Zeichenkonturen oder TXT für regelmäßige Zeichengitter.</p>
+          <h3>Wortwolke</h3>
+          <p>Importieren Sie einen Text oder eine Wortliste als TXT, CSV oder JSON. Gewichten Sie die Wörter und wählen Sie eine Silhouettenmaske oder Fotoanalyse. <strong>Foto / Porträt</strong> eignet sich als Ausgangspunkt für eine dichte Komposition in den Bildfarben.</p>
+          <p>Importieren Sie eine TTF- oder OTF-Schrift über das Typografiepanel oder legen Sie sie in <code>fonts/</code> ab. SVG exportiert die Zeichen als Konturen.</p>
+        </article>
+        <article class="topic" id="composition">
+          <h2>Ebenen und Exportformate</h2>
+          <p><strong>Ergebnis als Ebene</strong> fügt das Ergebnis dem Ebenenpanel hinzu. Wechseln Sie zu <strong>Komposition</strong>, um Druckfarben zu stapeln, zu verschieben oder umzufärben. Ein Alt-Klick auf die Sichtbarkeit isoliert eine Ebene. Ein weiterer blendet alle Ebenen wieder ein.</p>
+          <div class="table-wrap"><table><thead><tr><th>Format</th><th>Verwendung</th></tr></thead><tbody>
+            <tr><th scope="row">PNG</th><td>Rasterbild, Komposition oder Farbebene, je nach Modus.</td></tr>
+            <tr><th scope="row">SVG</th><td>Pfade aus dem Vektor-, ASCII- oder Wortwolkenmodus.</td></tr>
+            <tr><th scope="row">PDF / PSD</th><td>Kompositionen, Übergabe an eine Druckerei oder Farbauszüge, je nach Exportoptionen.</td></tr>
+            <tr><th scope="row">OBJ / STL</th><td>Netze aus der 3D-Werkstatt. Die Maße sind in Millimetern angegeben.</td></tr>
+          </tbody></table></div>
+          <p>Prüfen Sie vor dem Export einer Druckplatte die physische Größe, Pixelabmessungen und den Hintergrund. Ein <code>.orion4d</code>-Dokument bleibt bearbeitbar.</p>
+          <p>Die <strong>Druckprüfung</strong> hilft bei der Kontrolle von feinen Details, Weißunterlegung und Passer. Je nach Format können Sie Schwarzfilme, Negative oder gespiegelte Platten ausgeben.</p>
+        </article>
+        <article class="topic" id="motifs">
+          <h2>Musterlabor</h2>
+          <p>Erstellen Sie in der <strong>Musterlabor</strong> ein verstellbares Muster. Im <strong>Musterkatalog</strong> können Sie Muster vergleichen und anschließend auf ein Raster oder eine Druckfarbe anwenden.</p>
+          <p>Speichern Sie wiederverwendbare Einstellungen als Vorgaben oder Werkstattprofile. Die lokale Bibliothek der portablen Version liegt in <code>patterns/</code> und <code>svg_dots/</code>.</p>
+        </article>
+        <article class="topic" id="relief">
+          <h2>3D-Werkstatt</h2>
+          <p>Öffnen Sie die Werkstatt über die Hauptleiste. Wählen Sie einen Modus und stellen Sie Material, Beleuchtung und Ansicht ein, bevor Sie die Ausgabe wählen.</p>
+          <div class="table-wrap"><table><thead><tr><th>Modus</th><th>Erste Einstellungen</th></tr></thead><tbody>
+            <tr><th scope="row">Druckmaterialien</th><td>Simulieren Sie Folienprägung, Lack oder Prägung. Legen Sie das Raster auf eine Kugel, einen Zylinder, gebogenes Papier oder ein Relief. Stellen Sie Licht, Schatten und Umgebungsverdeckung (SSAO) ein.</td></tr>
+            <tr><th scope="row">Skulpturale Raster und 3D-Wörter</th><td>Stellen Sie das Gitter oder die Wortwolke und anschließend die Höhe der Formen ein. Prüfen Sie Sockel und Ansicht vor dem Export.</td></tr>
+            <tr><th scope="row">Bild zu 3D-Netz</th><td>Legen Sie Breite, Reliefhöhe und Sockeldicke in Millimetern fest. Die Höhen ergeben sich aus einem Bild oder einer Tiefenkarte.</td></tr>
+            <tr><th scope="row">Lithophanie</th><td>Stellen Sie Mindest- und Höchstdicke, Kurve und Absorption ein. Kalibrieren Sie das Filament mit dem Stufentest für Ihre Lichtquelle.</td></tr>
+            <tr><th scope="row">Skulptur aus zwei Bildern</th><td>Vergleichen Sie die Ansichten A und B. Exportieren Sie eine PNG-Faltvorlage mit Schnitt- und Faltmarken und drucken Sie sie bei 100 %.</td></tr>
+            <tr><th scope="row">Schichtschnitt</th><td>Legen Sie Dicke und Abstand der Schichten fest und bereiten Sie die Montagevorlagen vor.</td></tr>
+            <tr><th scope="row">Richtungsgravur</th><td>Gravieren Sie Rillen, deren Breite und Tiefe den Bildtönen folgen. Verwenden Sie <strong>An Quellbild anpassen</strong> und streifendes Licht, um das Relief sichtbar zu machen.</td></tr>
+            <tr><th scope="row">3D-Anamorphose</th><td>Ordnen Sie Punkte oder Wörter im Raum an und speichern Sie die Referenzansicht mit der 3D-Vorgabe.</td></tr>
+          </tbody></table></div>
+          <p>Exportieren Sie ein Standbild als PNG oder ein 3D-Netz als STL oder OBJ. Ein texturiertes OBJ wird mit seiner MTL-Datei und den Texturen in einem ZIP geliefert. Entpacken Sie die Dateien zusammen. Die Vorgaben liegen in <code>presets/3d/</code>.</p>
+          <h3>Animation</h3>
+          <p>Wählen Sie eine Drehung, einen optischen Effekt oder einen Aufbau- und Zerstreuungseffekt. Fügen Sie in der Zeitleiste Schlüsselbilder hinzu, verschieben oder löschen Sie sie und ändern Sie Bildausschnitt und Zoom. Exportieren Sie je nach Szeneneinstellungen als GIF oder MP4.</p>
+        </article>
+        <article class="topic" id="javascript">
+          <h2>JS-Effekte</h2>
+          <ol>
+            <li>Wählen Sie <strong>JS-Effekte</strong> und laden Sie ein Beispiel oder fügen Sie ein Skript ein.</li>
+            <li>Klicken Sie auf <strong>Testen und anwenden</strong>. Die <strong>Live-Vorschau</strong> testet den Effekt kurz nach einer Änderung am Code oder an einem Parameter erneut.</li>
+            <li>Ergänzen Sie eine Beschreibung und klicken Sie auf <strong>Speichern</strong>, um den Code und die Parameterwerte in der Vorgabe zu sichern.</li>
+          </ol>
+          <p>Definieren Sie Schieberegler, Zahlenfelder, Kontrollkästchen, Listen, Farben und Textfelder im JSON-Block <code>@orion4d-params</code>. Die synchrone Funktion erhält die Werte in <code>params</code> und ändert den RGBA-Puffer direkt. Die lokale Laufzeit begrenzt Zeit und Speicher.</p>
+          <div class="code-block">
+            <div class="code-head"><span data-label>Beispiel · einstellbarer Schwellenwert</span><button type="button" data-copy="seuil-code" data-copied="Kopiert" data-selected="Text ausgewählt" hidden>Kopieren</button></div>
+            <pre id="seuil-code"><code>/* @orion4d-params
+[
+  {"key":"threshold","type":"slider","label":"Schwellenwert","min":0,"max":255,"step":1,"default":128}
+]
+*/
+function effect(pixels, width, height, params) {
+  for (let i = 0; i &lt; pixels.length; i += 4) {
+    const tone = 0.2126 * pixels[i] + 0.7152 * pixels[i + 1] + 0.0722 * pixels[i + 2];
+    const gray = tone &gt;= params.threshold ? 255 : 0;
+    pixels[i] = pixels[i + 1] = pixels[i + 2] = gray;
+  }
+}</code></pre>
+          </div>
+          <p>Kopieren Sie eine kompatible JSON-Vorgabe nach <code>presets/javascript/</code> neben der ausführbaren Datei und starten Sie die App neu. In einer Ebene mit einer Druckfarbe fügen dunkle Pixel Farbe hinzu. Weiß bleibt transparent.</p>
+        </article>
+        <article class="topic" id="mcp">
+          <h2>Lokales MCP</h2>
+          <p>Aktivieren Sie MCP unter <strong>Einstellungen → Lokales MCP</strong> und kopieren Sie die Konfiguration in Ihren Client. Lassen Sie Orion4D Halftone Studio und das Dokument geöffnet. Der Client verwendet <code>--mcp-stdio</code> und kommuniziert lokal mit der Anwendung.</p>
+          <ul>
+            <li><code>orion_get_document</code> liest Modus, Größe und bearbeitbare Einstellungen.</li>
+            <li><code>orion_list_presets</code> listet Vorgaben auf. <code>orion_apply_preset</code> wendet eine gespeicherte Vorgabe an.</li>
+            <li><code>orion_set_mode</code> wechselt den 2D-Modus. <code>orion_update_settings</code> stellt Verarbeitung und Druckfarben ein.</li>
+            <li><code>orion_test_javascript</code> testet ein Skript mit der Quelle. <code>orion_save_javascript_preset</code> speichert das angewandte Skript.</li>
+            <li><code>orion_preview</code> liefert eine PNG-Vorschau. <code>orion_export_png</code> exportiert in den in Orion4D Halftone Studio eingestellten Ordner. <code>orion_undo</code> macht die letzte Änderung rückgängig.</li>
+          </ul>
+          <p>Wechseln Sie für 2D-Aktionen zur Bearbeitungsansicht und schließen Sie die 3D-Werkstatt. Kopieren Sie nach dem Verschieben der ausführbaren Datei die Konfiguration erneut.</p>
+        </article>
+        <article class="topic" id="lot">
+          <h2>Stapelverarbeitung und Vorgaben</h2>
+          <p>Bereiten Sie ein Ergebnis mit einem repräsentativen Bild vor und speichern Sie die Einstellungen als Vorgabe. Wechseln Sie zur <strong>Stapelverarbeitung</strong> und wählen Sie Quelle, Ziel und <a href="#dimensions">Eingabe- und Ausgabegröße</a>. In den Einstellungen können Sie Unterordner beibehalten und eindeutige Exportnamen verwenden.</p>
+          <p>Die Vorgaben sind in <code>presets/</code> nach Modus sortiert. Nehmen Sie beim Verschieben der portablen Version die Bibliotheken und lokalen Modelle mit.</p>
+        </article>
+        <article class="topic" id="depannage">
+          <h2>Fehlerbehebung</h2>
+          <ul>
+            <li><strong>Freistellung oder Tiefenkarte nicht verfügbar.</strong> Prüfen Sie, ob <code>models/</code> samt Unterordnern neben der ausführbaren Datei liegt.</li>
+            <li><strong>Animationsexport dauert lange.</strong> Versuchen Sie eine kürzere Dauer, eine niedrigere Bildrate oder eine geringere Ausgabeauflösung.</li>
+            <li><strong>Alte Programmdatei ist gesperrt.</strong> Schließen Sie Orion4D Halftone Studio und MCP-Clients, die diese Datei verwenden. Kopieren Sie vor dem Neustart die MCP-Konfiguration der neuen Version.</li>
+          </ul>
+          <p>Geben Sie bei einer Fehlermeldung die Windows-Version, den Modus, die Eingabe- und Ausgabegröße sowie die Schritte zur Reproduktion an. <a href="https://github.com/orion4d/Orion4D_Halftone_Studio/issues">Ein Problem auf GitHub melden</a></p>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="site-foot"><div class="wrap foot-inner"><a href="index.html">Orion4D Halftone Studio V2</a><span>© 2026 Philippe Joye · <a href="https://github.com/orion4d">orion4d auf GitHub</a></span><a href="#contenu">Nach oben ↑</a></div></footer>
+</body>
+</html>

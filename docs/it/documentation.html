@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guida di Orion4D Halftone Studio V2. Installa l’applicazione e scopri retini, separazioni, effetti JavaScript, MCP e laboratorio 3D.">
+  <meta name="theme-color" content="#171c17">
+  <!-- alternates:start -->
+  <link rel="alternate" hreflang="fr" href="../documentation.html">
+  <link rel="alternate" hreflang="en" href="../en/documentation.html">
+  <link rel="alternate" hreflang="de" href="../de/documentation.html">
+  <link rel="alternate" hreflang="it" href="documentation.html">
+  <link rel="alternate" hreflang="es" href="../es/documentation.html">
+  <link rel="alternate" hreflang="x-default" href="../documentation.html">
+  <!-- alternates:end -->
+  <title>Documentazione — Orion4D Halftone Studio V2</title>
+  <link rel="icon" href="../assets/orion.png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <script src="../assets/site.js" defer></script>
+</head>
+<body class="docs">
+  <a class="skip" href="#contenu">Vai al contenuto</a>
+  <header class="site-head">
+    <div class="wrap head-inner">
+      <a class="brand" href="index.html" aria-label="Orion4D Halftone Studio, pagina iniziale"><img src="../assets/orion.png" width="38" height="38" alt=""><span>Orion4D Halftone Studio <small>Laboratorio di immagini e motivi · Elaborazione locale</small></span></a>
+      <nav class="site-nav" aria-label="Navigazione principale">
+        <div class="nav-tabs">
+          <a href="index.html#outils">Strumenti</a>
+          <a href="index.html#galerie">Galleria</a>
+          <a href="documentation.html" aria-current="page">Documentazione</a>
+        </div>
+        <a class="nav-download" href="https://github.com/orion4d/Orion4D_Halftone_Studio/releases">Scarica</a>
+        <!-- languages:start -->
+        <details class="language-picker">
+          <summary aria-label="Lingua · Italiano">Italiano</summary>
+          <ul>
+            <li><a href="../documentation.html" lang="fr" hreflang="fr">Français</a></li>
+            <li><a href="../en/documentation.html" lang="en" hreflang="en">English</a></li>
+            <li><a href="../de/documentation.html" lang="de" hreflang="de">Deutsch</a></li>
+            <li><a href="documentation.html" lang="it" hreflang="it" aria-current="page">Italiano</a></li>
+            <li><a href="../es/documentation.html" lang="es" hreflang="es">Español</a></li>
+          </ul>
+        </details>
+        <!-- languages:end -->
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <div class="docs-hero">
+      <div class="wrap">
+        <p class="kicker"><span class="status-dot" aria-hidden="true"></span> V2.0.0</p>
+        <h1>Documentazione</h1>
+        <p>Trova i passaggi e i formati adatti al tuo progetto, dalle impostazioni del retino all’esportazione per la stampa o la modellazione 3D.</p>
+      </div>
+    </div>
+    <div class="wrap docs-layout">
+      <aside class="docs-aside">
+        <div class="docs-search" hidden>
+          <label for="doc-search">Cerca nella guida</label>
+          <input type="search" id="doc-search" placeholder="Es. lineatura, SVG, 3D" autocomplete="off">
+          <p class="search-status" id="doc-status" role="status" data-one="{count} capitolo trovato" data-many="{count} capitoli trovati"></p>
+        </div>
+        <nav aria-label="Indice della documentazione" class="docs-nav">
+          <p class="kicker">INDICE</p>
+          <a href="#installation">Installazione e aggiornamenti</a>
+          <a href="#demarrer">Per iniziare</a>
+          <a href="#retouche">Ritocco e profondità</a>
+          <a href="#trames">Punti vettoriali e pixel</a>
+          <a href="#impression">Stampa e inchiostri</a>
+          <a href="#typographie">ASCII e nuvole di parole</a>
+          <a href="#composition">Livelli e formati di esportazione</a>
+          <a href="#motifs">Laboratorio motivi</a>
+          <a href="#relief">Laboratorio 3D</a>
+          <a href="#javascript">Effetti JS</a>
+          <a href="#mcp">MCP locale</a>
+          <a href="#lot">Elaborazione batch e preimpostazioni</a>
+          <a href="#depannage">Risoluzione dei problemi</a>
+        </nav>
+      </aside>
+      <div class="docs-content">
+        <p class="no-results" hidden>Nessun capitolo corrisponde alla ricerca. Prova una parola come «inchiostro», «livello» o «rilievo».</p>
+        <article class="topic" id="installation">
+          <h2>Installa o aggiorna</h2>
+          <ol>
+            <li>Scarica <code>Orion4D-Halftone-Studio-V2-Windows-x64.zip</code> dalla pagina delle versioni su GitHub.</li>
+            <li>Estrai l’archivio in una cartella in cui puoi scrivere e avvia <code>Orion4D-Halftone-Studio-Portable-2.0.0.exe</code>. L’applicazione è portatile.</li>
+            <li>Tieni <code>models/</code> accanto all’eseguibile per scontornare immagini e generare mappe di profondità senza connessione.</li>
+            <li>In <strong>Impostazioni</strong>, scegli la lingua, la scala dell’interfaccia dall’80% al 130% e la cartella di uscita. Fai clic su <strong>Salva settings.json</strong>.</li>
+          </ol>
+          <p>Per aggiornare, estrai la nuova versione in una cartella separata e copia le preimpostazioni, i caratteri, gli SVG e le preferenze che vuoi conservare. Apri i progetti <code>.orion4d</code> dal menu <strong>File</strong>.</p>
+          <p>Orion4D Halftone Studio è gratuito, con donazioni facoltative. Il pacchetto include la licenza V2 e le note sui componenti di terze parti.</p>
+          <a class="button button-lime" href="https://github.com/orion4d/Orion4D_Halftone_Studio/releases">Versioni su GitHub <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="topic" id="demarrer">
+          <h2>Crea il tuo primo retino</h2>
+          <p>Cambia modalità dalla barra superiore. Le impostazioni sono a sinistra, l’anteprima al centro e i livelli a destra.</p>
+          <ol>
+            <li>In <strong>Immagine singola</strong>, fai clic su <strong>Apri / sostituisci immagine</strong> e scegli il file sorgente.</li>
+            <li>Scegli <strong>Punti vettoriali</strong> per forme esportabili in SVG o <strong>Punti pixel</strong> per un risultato raster.</li>
+            <li>Regola la spaziatura e la forma, poi usa <strong>Prima / Dopo</strong> per confrontare il risultato con l’originale.</li>
+            <li>Seleziona il formato e le dimensioni di uscita nella barra superiore, poi fai clic su <strong>Esporta</strong>. Salva il documento per conservare le impostazioni.</li>
+          </ol>
+          <h3 id="dimensions">Dimensioni di ingresso e di uscita</h3>
+          <p><strong>Dimensione di ingresso</strong> imposta le dimensioni di lavoro prima dell’elaborazione. Mantieni l’originale, scegli una percentuale dal 25% al 200% o fissa il lato lungo tra 1.024 e 8.192 px. Il ridimensionamento conserva proporzioni e trasparenza. Il documento conserva la sorgente originale.</p>
+          <div class="callout"><strong>Esporta alle dimensioni di lavoro</strong><p>Scegli <strong>Originale</strong> come dimensione di uscita per usare le dimensioni di lavoro. Per ottenere altre misure, imposta la lunghezza del lato maggiore o un formato di stampa. Il lato lungo di un ingresso ridimensionato non supera 8.192 px.</p></div>
+          <figure class="doc-figure"><img src="../assets/interface-it.webp" width="1440" height="920" alt="Interfaccia di Orion4D Halftone Studio V2 con le impostazioni delle separazioni a sinistra, una composizione retinata al centro e i livelli a destra" loading="lazy"><figcaption>Vista Immagine singola in modalità Avanzata. Le dimensioni di ingresso si trovano nella barra superiore.</figcaption></figure>
+        </article>
+        <article class="topic" id="retouche">
+          <h2>Ritocco e profondità</h2>
+          <p>Usa <strong>Ritocco B/N</strong> per preparare i toni di un retino monocromatico. Controlla che ombre e alte luci conservino i dettagli da stampare.</p>
+          <p>Lo scontorno usa modelli locali. Regola la soglia della maschera e la morbidezza del bordo, poi esporta l’immagine scontornata in PNG.</p>
+          <p>In <strong>Rilievo del retino</strong>, genera o importa una mappa di profondità e attiva il rilievo. Intensità, direzione e smussatura regolano la deformazione del motivo. La miniatura mostra la mappa anche quando la tela visualizza l’immagine elaborata.</p>
+          <p>In <strong>Normal Map</strong>, genera le normali dalla profondità o importa una mappa PNG. Attivane l’influenza per adattare il retino alla superficie.</p>
+        </article>
+        <article class="topic" id="trames">
+          <h2>Punti vettoriali e pixel</h2>
+          <h3>Punti vettoriali</h3>
+          <p>Regola griglia, spaziatura e forma dei punti. Il <strong>Laboratorio vettoriale</strong> offre tratteggi continui, puntinismo adattivo e contorni Bézier. La precisione di analisi determina la geometria. Una risoluzione di esportazione più alta la riproduce con maggiore dettaglio.</p>
+          <p>Per usare una forma SVG personalizzata, inseriscila in <code>svg_dots/</code> accanto all’eseguibile. Seleziona lo stile SVG personalizzato e ricarica l’elenco delle forme.</p>
+          <h3>Punti pixel</h3>
+          <p>Regola campionamento, elaborazione raster e generazione dei motivi. Confronta i motivi alle dimensioni di esportazione. Il PNG conserva il risultato raster. Scegli RGB a 1 bit per applicare una soglia.</p>
+        </article>
+        <article class="topic" id="impression">
+          <h2>Stampa e inchiostri</h2>
+          <p>In <strong>Avanzato → Separazioni</strong>, scegli <strong>Stampa</strong> e seleziona CMYK, bicromia, tricromia o multi-inchiostro. Con quattro-otto inchiostri puoi calcolare la mappatura o importare un profilo ICC di uscita.</p>
+          <p>La tavolozza multi-inchiostro parte da CMYK, arancione e verde. I campioni di tinte piatte offrono colori assortiti, pastello, complementari e terziari.</p>
+          <ol>
+            <li>Imposta il <strong>Dimensione di stampa</strong> affinché la lineatura corrisponda alle dimensioni fisiche.</li>
+            <li>Scegli un motivo, una spaziatura e una copertura comuni. Apri un inchiostro per adattarne il motivo, la curva e l’angolo. Usa <strong>Reimposta tutte le curve</strong> per ripristinare una risposta lineare.</li>
+            <li>Confronta i motivi retinati con le separazioni piatte, poi invia i livelli alla composizione o esporta le separazioni.</li>
+          </ol>
+          <div class="callout"><strong>Lineatura e spaziatura</strong><p>Se la lineatura è collegata, una modifica in un campo aggiorna l’altro. La spaziatura in millimetri è <code>25,4 ÷ lpi</code>. A 40 lpi è pari a 0,635 mm. Per un retino stocastico FM, regola la dimensione dei micropunti.</p></div>
+        </article>
+        <article class="topic" id="typographie">
+          <h2>ASCII e nuvole di parole</h2>
+          <h3>ASCII</h3>
+          <p>Scegli uno stile e un set di caratteri, poi regola le colonne e la composizione. Usa PNG per il risultato, SVG per i contorni dei glifi o TXT per gli stili a griglia regolare.</p>
+          <h3>Nuvola di parole</h3>
+          <p>Importa un testo o un elenco di parole TXT, CSV o JSON. Regola il peso delle parole e scegli una maschera di sagoma o l’analisi della foto. <strong>Foto / ritratto</strong> è un punto di partenza per una composizione densa con i colori dell’immagine.</p>
+          <p>Importa un carattere TTF o OTF dal pannello tipografia, oppure inseriscilo in <code>fonts/</code>. In SVG i glifi vengono esportati come contorni.</p>
+        </article>
+        <article class="topic" id="composition">
+          <h2>Livelli e formati di esportazione</h2>
+          <p><strong>Invia risultato ai livelli</strong> aggiunge il risultato al pannello Livelli. Passa alla vista <strong>Composizione</strong> per sovrapporre, spostare o ricolorare gli inchiostri. Fai Alt-clic sulla visibilità per isolare un livello. Ripeti per mostrarli tutti.</p>
+          <div class="table-wrap"><table><thead><tr><th>Formato</th><th>Quando usarlo</th></tr></thead><tbody>
+            <tr><th scope="row">PNG</th><td>Immagine raster, composizione o livello di inchiostro, secondo la modalità.</td></tr>
+            <tr><th scope="row">SVG</th><td>Tracciati delle modalità vettoriale, ASCII o nuvola di parole.</td></tr>
+            <tr><th scope="row">PDF / PSD</th><td>Composizione, consegna a un centro stampa o separazioni, secondo le opzioni di esportazione.</td></tr>
+            <tr><th scope="row">OBJ / STL</th><td>Mesh prodotte nel laboratorio 3D. Le dimensioni sono espresse in millimetri.</td></tr>
+          </tbody></table></div>
+          <p>Prima di esportare una lastra, controlla le misure fisiche, i pixel e lo sfondo. Il documento <code>.orion4d</code> conserva una versione modificabile.</p>
+          <p>Il <strong>Controllo di stampa</strong> aiuta a verificare i dettagli fini, il fondo bianco e la registrazione. I formati compatibili possono produrre pellicole nere, negativi o lastre specchiate.</p>
+        </article>
+        <article class="topic" id="motifs">
+          <h2>Laboratorio motivi</h2>
+          <p>Apri il <strong>Laboratorio motivi</strong> per creare un motivo regolabile. Usa il <strong>Catalogo motivi</strong> per confrontarli prima di applicarne uno a un retino o a un inchiostro.</p>
+          <p>Salva le combinazioni riutilizzabili come preimpostazioni o profili del laboratorio. Le cartelle <code>patterns/</code> e <code>svg_dots/</code> fanno parte della libreria locale della versione portatile.</p>
+        </article>
+        <article class="topic" id="relief">
+          <h2>Laboratorio 3D</h2>
+          <p>Apri il laboratorio dalla barra principale. Scegli una modalità di creazione e regola il materiale, la luce e la vista prima di scegliere l’uscita.</p>
+          <div class="table-wrap"><table><thead><tr><th>Creazione</th><th>Impostazioni di partenza</th></tr></thead><tbody>
+            <tr><th scope="row">Materiali di stampa</th><td>Simula doratura, vernice o rilievo a secco. Applica il retino a una sfera, un cilindro, un foglio curvo o un rilievo. Regola luce, ombre e occlusione ambientale SSAO.</td></tr>
+            <tr><th scope="row">Retini scolpiti e parole in 3D</th><td>Imposta la griglia o la nuvola e regola l’altezza delle forme. Controlla la base e la vista prima dell’esportazione.</td></tr>
+            <tr><th scope="row">Da immagine a mesh</th><td>Imposta larghezza, altezza del rilievo e spessore della base in millimetri. Usa un’immagine o una mappa di profondità per determinare le altezze.</td></tr>
+            <tr><th scope="row">Litofania</th><td>Regola spessore minimo e massimo, curva e assorbimento. Usa il provino a gradini per calibrare il filamento in base alla luce.</td></tr>
+            <tr><th scope="row">Scultura a due immagini</th><td>Confronta le viste A e B ed esporta un modello di piegatura PNG con segni di taglio e piega. Stampalo al 100%.</td></tr>
+            <tr><th scope="row">Taglio a strati</th><td>Imposta lo spessore e la distanza tra gli strati e prepara le sagome di montaggio.</td></tr>
+            <tr><th scope="row">Incisione direzionale</th><td>Crea solchi la cui larghezza e profondità seguono i toni. Usa <strong>Adatta all’immagine originale</strong> e una luce radente per mettere in evidenza il rilievo.</td></tr>
+            <tr><th scope="row">Anamorfosi 3D</th><td>Disponi punti o parole nello spazio e salva la vista di riferimento con la preimpostazione 3D.</td></tr>
+          </tbody></table></div>
+          <p>Esporta un’immagine fissa in PNG o la mesh in STL o OBJ. Un OBJ con texture include il file MTL e le texture in uno ZIP da estrarre insieme. Le preimpostazioni sono in <code>presets/3d/</code>.</p>
+          <h3>Animazione</h3>
+          <p>Scegli una rotazione, un effetto ottico o un effetto di composizione e dispersione. Nella sequenza temporale puoi aggiungere, spostare o eliminare fotogrammi chiave e variare inquadratura e zoom. Esporta in GIF o MP4 secondo le impostazioni della scena.</p>
+        </article>
+        <article class="topic" id="javascript">
+          <h2>Effetti JS</h2>
+          <ol>
+            <li>Seleziona <strong>Effetti JS</strong>, poi carica un esempio o incolla uno script.</li>
+            <li>Fai clic su <strong>Prova e applica</strong>. L’<strong>Anteprima in tempo reale</strong> ripete il test dopo una breve pausa quando cambi il codice o un parametro.</li>
+            <li>Aggiungi una descrizione e fai clic su <strong>Salva</strong> per conservare il codice e i valori dello script nella preimpostazione.</li>
+          </ol>
+          <p>Dichiara cursori, campi numerici, caselle di spunta, elenchi, colori e campi di testo in un blocco JSON <code>@orion4d-params</code>. La funzione sincrona riceve i valori in <code>params</code> e aggiorna direttamente il buffer RGBA. Il motore locale limita il tempo e la memoria.</p>
+          <div class="code-block">
+            <div class="code-head"><span data-label>Esempio · soglia regolabile</span><button type="button" data-copy="seuil-code" data-copied="Copiato" data-selected="Testo selezionato" hidden>Copia</button></div>
+            <pre id="seuil-code"><code>/* @orion4d-params
+[
+  {"key":"threshold","type":"slider","label":"Soglia","min":0,"max":255,"step":1,"default":128}
+]
+*/
+function effect(pixels, width, height, params) {
+  for (let i = 0; i &lt; pixels.length; i += 4) {
+    const tone = 0.2126 * pixels[i] + 0.7152 * pixels[i + 1] + 0.0722 * pixels[i + 2];
+    const gray = tone &gt;= params.threshold ? 255 : 0;
+    pixels[i] = pixels[i + 1] = pixels[i + 2] = gray;
+  }
+}</code></pre>
+          </div>
+          <p>Per installare una preimpostazione JSON compatibile, copiala in <code>presets/javascript/</code> accanto all’eseguibile e riavvia l’applicazione. In un livello con un solo inchiostro, i pixel scuri depositano inchiostro e il bianco resta trasparente.</p>
+        </article>
+        <article class="topic" id="mcp">
+          <h2>MCP locale</h2>
+          <p>In <strong>Impostazioni → MCP locale</strong>, attiva MCP e copia la configurazione nel client. Tieni aperti Orion4D Halftone Studio e il documento. Il client usa <code>--mcp-stdio</code> per comunicare localmente con l’applicazione.</p>
+          <ul>
+            <li><code>orion_get_document</code> legge modalità, dimensioni e impostazioni modificabili.</li>
+            <li><code>orion_list_presets</code> elenca le preimpostazioni e <code>orion_apply_preset</code> applica una preimpostazione salvata.</li>
+            <li><code>orion_set_mode</code> cambia la modalità 2D e <code>orion_update_settings</code> regola l’elaborazione e gli inchiostri.</li>
+            <li><code>orion_test_javascript</code> prova uno script sull’immagine sorgente. <code>orion_save_javascript_preset</code> salva lo script applicato.</li>
+            <li><code>orion_preview</code> restituisce un’anteprima PNG. <code>orion_export_png</code> esporta nella cartella impostata in Orion4D Halftone Studio e <code>orion_undo</code> annulla l’ultima modifica.</li>
+          </ul>
+          <p>Per un’operazione 2D, torna alla vista Elaborazione e chiudi il laboratorio 3D. Se sposti l’eseguibile, copia di nuovo la configurazione per aggiornare il percorso.</p>
+        </article>
+        <article class="topic" id="lot">
+          <h2>Elaborazione batch e preimpostazioni</h2>
+          <p>Prepara un risultato con un’immagine rappresentativa e salva le impostazioni come preimpostazione. Passa a <strong>Elaborazione batch</strong>, scegli sorgente e destinazione e imposta le <a href="#dimensions">dimensioni di ingresso e di uscita</a> prima di avviare il lotto. Nelle impostazioni puoi conservare le sottocartelle e usare nomi di esportazione univoci.</p>
+          <p>Le preimpostazioni sono suddivise per modalità in <code>presets/</code>. Quando sposti la versione portatile, porta con te le librerie e i modelli locali.</p>
+        </article>
+        <article class="topic" id="depannage">
+          <h2>Risoluzione dei problemi</h2>
+          <ul>
+            <li><strong>Scontorno o profondità non disponibili.</strong> Controlla che <code>models/</code> e le sottocartelle siano accanto all’eseguibile.</li>
+            <li><strong>Esportazione dell’animazione lenta.</strong> Prova una durata minore, una frequenza di fotogrammi più bassa o una risoluzione di uscita inferiore.</li>
+            <li><strong>Il vecchio eseguibile è bloccato.</strong> Chiudi Orion4D Halftone Studio e i client MCP che usano l’eseguibile. Copia la configurazione MCP della nuova versione prima di riavviarli.</li>
+          </ul>
+          <p>Se segnali un problema, indica la versione di Windows, il motore, le dimensioni di ingresso e di uscita e i passaggi per riprodurlo. <a href="https://github.com/orion4d/Orion4D_Halftone_Studio/issues">Segnala un problema su GitHub</a></p>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="site-foot"><div class="wrap foot-inner"><a href="index.html">Orion4D Halftone Studio V2</a><span>© 2026 Philippe Joye · <a href="https://github.com/orion4d">orion4d su GitHub</a></span><a href="#contenu">Torna in alto ↑</a></div></footer>
+</body>
+</html>

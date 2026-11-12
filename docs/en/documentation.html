@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Orion4D Halftone Studio V2 guide. Install the app and explore halftones, separations, JavaScript effects, MCP and the 3D Workshop.">
+  <meta name="theme-color" content="#171c17">
+  <!-- alternates:start -->
+  <link rel="alternate" hreflang="fr" href="../documentation.html">
+  <link rel="alternate" hreflang="en" href="documentation.html">
+  <link rel="alternate" hreflang="de" href="../de/documentation.html">
+  <link rel="alternate" hreflang="it" href="../it/documentation.html">
+  <link rel="alternate" hreflang="es" href="../es/documentation.html">
+  <link rel="alternate" hreflang="x-default" href="../documentation.html">
+  <!-- alternates:end -->
+  <title>Documentation — Orion4D Halftone Studio V2</title>
+  <link rel="icon" href="../assets/orion.png">
+  <link rel="stylesheet" href="../assets/site.css">
+  <script src="../assets/site.js" defer></script>
+</head>
+<body class="docs">
+  <a class="skip" href="#contenu">Skip to content</a>
+  <header class="site-head">
+    <div class="wrap head-inner">
+      <a class="brand" href="index.html" aria-label="Orion4D Halftone Studio home"><img src="../assets/orion.png" width="38" height="38" alt=""><span>Orion4D Halftone Studio <small>Image and pattern lab · Local processing</small></span></a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <div class="nav-tabs">
+          <a href="index.html#outils">Tools</a>
+          <a href="index.html#galerie">Gallery</a>
+          <a href="documentation.html" aria-current="page">Documentation</a>
+        </div>
+        <a class="nav-download" href="https://github.com/orion4d/Orion4D_Halftone_Studio/releases">Download</a>
+        <!-- languages:start -->
+        <details class="language-picker">
+          <summary aria-label="Language · English">English</summary>
+          <ul>
+            <li><a href="../documentation.html" lang="fr" hreflang="fr">Français</a></li>
+            <li><a href="documentation.html" lang="en" hreflang="en" aria-current="page">English</a></li>
+            <li><a href="../de/documentation.html" lang="de" hreflang="de">Deutsch</a></li>
+            <li><a href="../it/documentation.html" lang="it" hreflang="it">Italiano</a></li>
+            <li><a href="../es/documentation.html" lang="es" hreflang="es">Español</a></li>
+          </ul>
+        </details>
+        <!-- languages:end -->
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <div class="docs-hero">
+      <div class="wrap">
+        <p class="kicker"><span class="status-dot" aria-hidden="true"></span> V2.0.0</p>
+        <h1>Documentation</h1>
+        <p>Find the steps and file formats for your project, from halftone settings to print and mesh exports.</p>
+      </div>
+    </div>
+    <div class="wrap docs-layout">
+      <aside class="docs-aside">
+        <div class="docs-search" hidden>
+          <label for="doc-search">Search the guide</label>
+          <input type="search" id="doc-search" placeholder="E.g. screen ruling, SVG, 3D" autocomplete="off">
+          <p class="search-status" id="doc-status" role="status" data-one="{count} chapter found" data-many="{count} chapters found"></p>
+        </div>
+        <nav aria-label="Documentation contents" class="docs-nav">
+          <p class="kicker">CONTENTS</p>
+          <a href="#installation">Installation and updates</a>
+          <a href="#demarrer">Getting started</a>
+          <a href="#retouche">Retouching and depth</a>
+          <a href="#trames">Vector and pixel dots</a>
+          <a href="#impression">Print and inks</a>
+          <a href="#typographie">ASCII and word clouds</a>
+          <a href="#composition">Layers and export formats</a>
+          <a href="#motifs">Pattern Lab</a>
+          <a href="#relief">3D Workshop</a>
+          <a href="#javascript">JS effects</a>
+          <a href="#mcp">Local MCP</a>
+          <a href="#lot">Batch processing and presets</a>
+          <a href="#depannage">Troubleshooting</a>
+        </nav>
+      </aside>
+      <div class="docs-content">
+        <p class="no-results" hidden>No chapters match your search. Try a term such as “ink”, “layer” or “relief”.</p>
+        <article class="topic" id="installation">
+          <h2>Install or update</h2>
+          <ol>
+            <li>Download <code>Orion4D-Halftone-Studio-V2-Windows-x64.zip</code> from GitHub Releases.</li>
+            <li>Extract the archive to a folder where you have write access and run <code>Orion4D-Halftone-Studio-Portable-2.0.0.exe</code>. The app is portable.</li>
+            <li>Keep <code>models/</code> next to the executable for offline background removal and depth map generation.</li>
+            <li>In <strong>General Settings</strong>, choose the language, an interface scale from 80% to 130%, and the export folder. Click <strong>Save settings.json</strong>.</li>
+          </ol>
+          <p>To update, extract the new version to a separate folder. Copy across any presets, fonts, SVGs and preferences you want to keep. Open your <code>.orion4d</code> projects from the <strong>File</strong> menu.</p>
+          <p>Orion4D Halftone Studio is free to use, with optional donations. The package includes the V2 licence and third-party notices.</p>
+          <a class="button button-lime" href="https://github.com/orion4d/Orion4D_Halftone_Studio/releases">GitHub releases <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="topic" id="demarrer">
+          <h2>Create your first halftone</h2>
+          <p>Switch modes in the top toolbar. Settings are on the left, the preview is in the centre and layers are on the right.</p>
+          <ol>
+            <li>In <strong>Single Image</strong>, click <strong>Open / Replace Image</strong> and choose your source.</li>
+            <li>Choose <strong>Vector Dots</strong> for shapes you can export as SVG, or <strong>Pixel Dots</strong> for raster output.</li>
+            <li>Adjust spacing and shape, then use <strong>Before / After</strong> to compare the result with the source.</li>
+            <li>Choose an output format and size at the top of the window, then click <strong>Export</strong>. Save the document to keep your settings.</li>
+          </ol>
+          <h3 id="dimensions">Input and output sizes</h3>
+          <p><strong>Input size</strong> sets the working dimensions before processing. Keep the original size, choose a percentage from 25% to 200%, or set the longest side to a fixed value from 1,024 to 8,192 px. Resizing preserves the aspect ratio and transparency. The document retains the original source image.</p>
+          <div class="callout"><strong>Export at the working size</strong><p>Choose <strong>Original</strong> as the output size to use the working input dimensions. For different dimensions, set a fixed length for the longest side or choose a print size. Resized inputs are capped at 8,192 px on the longest side.</p></div>
+          <figure class="doc-figure"><img src="../assets/interface-en.webp" width="1440" height="920" alt="Orion4D Halftone Studio V2 interface with separation settings on the left, a halftone composition in the centre and layers on the right" loading="lazy"><figcaption>Single Image view in Advanced mode. The input size is in the top toolbar.</figcaption></figure>
+        </article>
+        <article class="topic" id="retouche">
+          <h2>Retouching and depth</h2>
+          <p>Use <strong>B&amp;W Retouch</strong> to prepare the tones for a monochrome halftone. Check that shadows and highlights retain the detail you want to print.</p>
+          <p>Background removal uses local models. Adjust the mask threshold and edge softness, then export the cut-out as a PNG.</p>
+          <p>In <strong>Screen relief</strong>, generate or import a depth map and enable relief. Strength, direction and smoothing control how the pattern bends. The thumbnail shows the depth map even when the canvas displays the processed image.</p>
+          <p>In <strong>Normal Map</strong>, generate normals from depth or import a normal map PNG. Enable their influence to guide how the halftone maps onto the surface.</p>
+        </article>
+        <article class="topic" id="trames">
+          <h2>Vector and pixel dots</h2>
+          <h3>Vector Dots</h3>
+          <p>Set the grid, spacing and dot shape. The <strong>Vector workshop</strong> also offers continuous hatching, adaptive stippling and Bézier outlines. Analysis precision sets the geometry. Increasing the export resolution renders it in finer detail.</p>
+          <p>To use a custom SVG shape, place it in <code>svg_dots/</code> next to the executable. Select the custom SVG style and reload the shape list.</p>
+          <h3>Pixel Dots</h3>
+          <p>Adjust sampling, raster processing and pattern generation. Compare patterns at the intended export size. PNG preserves the raster output. Select 1-bit RGB for a thresholded result.</p>
+        </article>
+        <article class="topic" id="impression">
+          <h2>Print and inks</h2>
+          <p>In <strong>Advanced → Separations</strong>, choose <strong>Print</strong> and select CMYK, two-colour, three-colour or multi-ink. Multi-ink accepts four to eight inks and can calculate the mapping or import an output ICC profile.</p>
+          <p>The multi-ink palette starts with CMYK, orange and green. Spot-colour swatch libraries offer mixed, pastel, complementary and tertiary colours.</p>
+          <ol>
+            <li>Set the <strong>Print Size</strong> so that the screen ruling matches the physical dimensions.</li>
+            <li>Set a global pattern, spacing and ink coverage. Open an ink to adjust its pattern, curve and angle. Use <strong>Reset all curves</strong> to restore a linear ink response.</li>
+            <li>Compare the screened patterns with the flat separations, then send the levels to layers or export the separations.</li>
+          </ol>
+          <div class="callout"><strong>Screen ruling and spacing</strong><p>When screen ruling is linked, changing one field updates the other. Spacing in millimetres is <code>25.4 ÷ lpi</code>. At 40 lpi it is 0.635 mm. For an FM stochastic screen, adjust the microdot size.</p></div>
+        </article>
+        <article class="topic" id="typographie">
+          <h2>ASCII and word clouds</h2>
+          <h3>ASCII</h3>
+          <p>Choose a style and character set, then adjust the columns and layout. Use PNG for the rendered image, SVG for glyph outlines or TXT for regular grid styles.</p>
+          <h3>Word cloud</h3>
+          <p>Import text or a word list in TXT, CSV or JSON format. Adjust word weights and choose a silhouette mask or photo analysis. <strong>Photo / portrait</strong> is a starting point for a dense composition that uses the image colours.</p>
+          <p>Import a TTF or OTF font from the typography panel, or place it in <code>fonts/</code>. SVG exports glyphs as outlines.</p>
+        </article>
+        <article class="topic" id="composition">
+          <h2>Layers and export formats</h2>
+          <p><strong>Send result to layers</strong> adds the render to the Layers panel. Switch to <strong>Composition</strong> to stack, move or recolour inks. Alt-click the visibility button to isolate a layer. Alt-click again to show the layers.</p>
+          <div class="table-wrap"><table><thead><tr><th>Format</th><th>When to use it</th></tr></thead><tbody>
+            <tr><th scope="row">PNG</th><td>Raster image, composition or ink layer, depending on the mode.</td></tr>
+            <tr><th scope="row">SVG</th><td>Paths from vector, ASCII or word cloud modes.</td></tr>
+            <tr><th scope="row">PDF / PSD</th><td>Compositions, print handoff or separations, depending on the export options.</td></tr>
+            <tr><th scope="row">OBJ / STL</th><td>Meshes from the 3D Workshop. Dimensions are in millimetres.</td></tr>
+          </tbody></table></div>
+          <p>Before exporting a plate, check the physical size, pixel dimensions and background. Save an editable copy in a <code>.orion4d</code> document.</p>
+          <p><strong>Print check</strong> helps verify fine detail, white underbase and registration. Supported formats can produce black films, negatives or mirrored plates.</p>
+        </article>
+        <article class="topic" id="motifs">
+          <h2>Pattern Lab</h2>
+          <p>Open <strong>Pattern Lab</strong> to create an adjustable pattern. Use the <strong>Pattern catalogue</strong> to browse and compare patterns before applying one to a halftone or ink.</p>
+          <p>Save combinations you want to reuse as presets or workshop profiles. The portable version stores its local libraries in <code>patterns/</code> and <code>svg_dots/</code>.</p>
+        </article>
+        <article class="topic" id="relief">
+          <h2>3D Workshop</h2>
+          <p>Open the workshop from the main toolbar. Choose a creation mode and adjust the material, lighting and view before choosing an output.</p>
+          <div class="table-wrap"><table><thead><tr><th>Creation</th><th>Starting settings</th></tr></thead><tbody>
+            <tr><th scope="row">Print materials</th><td>Simulate foil, varnish or embossing. Map the halftone onto a sphere, cylinder, curved sheet or relief. Adjust lighting, shadows and screen-space ambient occlusion (SSAO).</td></tr>
+            <tr><th scope="row">Sculpted halftones and word volumes</th><td>Set the grid or word cloud, then adjust shape height. Check the base and view before exporting.</td></tr>
+            <tr><th scope="row">Image to mesh</th><td>Set the width, relief height and base thickness in millimetres. Use an image or depth map to determine the heights.</td></tr>
+            <tr><th scope="row">Lithophane</th><td>Set minimum and maximum thickness, the curve and absorption. Use the stepped test piece to calibrate the filament for your lighting.</td></tr>
+            <tr><th scope="row">Two-image sculpture</th><td>Compare views A and B and export a folding template as a PNG with cut and fold guides. Print it at 100%.</td></tr>
+            <tr><th scope="row">Layer slicing</th><td>Set the thickness and spacing between layers, then prepare assembly templates.</td></tr>
+            <tr><th scope="row">Directional engraving</th><td>Cut grooves whose width and depth follow the image tones. Try <strong>Match source image</strong> and use a low-angle light to reveal the relief.</td></tr>
+            <tr><th scope="row">3D anamorphosis</th><td>Arrange dots or words in space and save the reference view with the 3D preset.</td></tr>
+          </tbody></table></div>
+          <p>Export a still image as PNG or a mesh as STL or OBJ. A textured OBJ comes with its MTL file and textures in a ZIP. Extract them together. Workshop presets are stored in <code>presets/3d/</code>.</p>
+          <h3>Animation</h3>
+          <p>Choose rotation, an optical effect or an effect that assembles and disperses the image. Add, move or remove keyframes on the timeline and vary the framing and zoom. Export as GIF or MP4 according to the scene settings.</p>
+        </article>
+        <article class="topic" id="javascript">
+          <h2>JS effects</h2>
+          <ol>
+            <li>Select <strong>JS effects</strong>, then load an example or paste a script.</li>
+            <li>Click <strong>Test and apply</strong>. <strong>Live preview</strong> runs the test again shortly after you change the code or a setting.</li>
+            <li>Add a description and click <strong>Save</strong> to keep the code and script values with the preset.</li>
+          </ol>
+          <p>Declare sliders, numeric fields, tick boxes, lists, colours and text fields in an <code>@orion4d-params</code> JSON block. The synchronous function receives the values in <code>params</code> and updates the RGBA buffer in place. The local engine enforces time and memory limits.</p>
+          <div class="code-block">
+            <div class="code-head"><span data-label>Example · adjustable threshold</span><button type="button" data-copy="seuil-code" data-copied="Copied" data-selected="Text selected" hidden>Copy</button></div>
+            <pre id="seuil-code"><code>/* @orion4d-params
+[
+  {"key":"threshold","type":"slider","label":"Threshold","min":0,"max":255,"step":1,"default":128}
+]
+*/
+function effect(pixels, width, height, params) {
+  for (let i = 0; i &lt; pixels.length; i += 4) {
+    const tone = 0.2126 * pixels[i] + 0.7152 * pixels[i + 1] + 0.0722 * pixels[i + 2];
+    const gray = tone &gt;= params.threshold ? 255 : 0;
+    pixels[i] = pixels[i + 1] = pixels[i + 2] = gray;
+  }
+}</code></pre>
+          </div>
+          <p>To install a compatible JSON preset, copy it to <code>presets/javascript/</code> next to the executable and restart the app. In a single-ink layer, dark pixels add ink and white stays transparent.</p>
+        </article>
+        <article class="topic" id="mcp">
+          <h2>Local MCP</h2>
+          <p>In <strong>General Settings → Local MCP</strong>, enable MCP and copy the configuration into your client. Keep Orion4D Halftone Studio and the document open. The client uses <code>--mcp-stdio</code> and communicates with the app locally.</p>
+          <ul>
+            <li><code>orion_get_document</code> reads the mode, size and editable settings.</li>
+            <li><code>orion_list_presets</code> lists presets and <code>orion_apply_preset</code> applies a saved preset.</li>
+            <li><code>orion_set_mode</code> changes the 2D mode and <code>orion_update_settings</code> adjusts processing and inks.</li>
+            <li><code>orion_test_javascript</code> tests a script on the source. <code>orion_save_javascript_preset</code> saves the applied script.</li>
+            <li><code>orion_preview</code> returns a PNG preview. <code>orion_export_png</code> exports to the folder set in Orion4D Halftone Studio and <code>orion_undo</code> undoes the last change.</li>
+          </ul>
+          <p>For 2D operations, return to the Processing view and close the 3D Workshop. If you move the executable, copy the configuration again to update its path.</p>
+        </article>
+        <article class="topic" id="lot">
+          <h2>Batch processing and presets</h2>
+          <p>Prepare a result with a representative image and save the settings as a preset. Switch to <strong>Batch Processing</strong>, choose the source and destination folders, and select the <a href="#dimensions">input and output sizes</a> before starting the batch. General Settings lets you preserve subfolders and use unique export names.</p>
+          <p>Presets are grouped by mode in <code>presets/</code>. When moving the portable version, keep the libraries and local models with it.</p>
+        </article>
+        <article class="topic" id="depannage">
+          <h2>Troubleshooting</h2>
+          <ul>
+            <li><strong>Background removal or depth unavailable.</strong> Check that <code>models/</code> and its subfolders are next to the executable.</li>
+            <li><strong>Slow animation export.</strong> Try a shorter duration, lower frame rate or lower output resolution.</li>
+            <li><strong>Old executable is locked.</strong> Close Orion4D Halftone Studio and quit any MCP clients using the executable. Copy the MCP configuration from the new version before restarting them.</li>
+          </ul>
+          <p>When reporting a problem, include the Windows version, rendering engine, input and output sizes and steps to reproduce it. <a href="https://github.com/orion4d/Orion4D_Halftone_Studio/issues">Report an issue on GitHub</a></p>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="site-foot"><div class="wrap foot-inner"><a href="index.html">Orion4D Halftone Studio V2</a><span>© 2026 Philippe Joye · <a href="https://github.com/orion4d">orion4d on GitHub</a></span><a href="#contenu">Back to top ↑</a></div></footer>
+</body>
+</html>
