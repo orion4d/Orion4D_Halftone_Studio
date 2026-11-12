@@ -1,35 +1,3 @@
-# Orion4D Halftone Studio V2
-
-Orion4D Halftone Studio is a portable graphics studio for Windows x64. It turns images into halftones, separation films, typographic compositions and 3D reliefs. It is designed for graphic designers, photographers, screen printers, engravers and other creators who want to prepare files on their own computer.
-
-**Free donationware · Local processing · English, French, German, Italian and Spanish**
-
-[Official repository](https://github.com/orion4d/Orion4D_Halftone_Studio) · [GitHub releases](https://github.com/orion4d/Orion4D_Halftone_Studio/releases) · [Report an issue](https://github.com/orion4d/Orion4D_Halftone_Studio/issues)
-
-## Contents
-
-- [Installation and first launch](#installation-and-first-launch)
-- [Preparing an image](#preparing-an-image)
-- [Choosing a rendering engine](#choosing-a-rendering-engine)
-- [Layers and print preparation](#layers-and-print-preparation)
-- [Depth and normals](#depth-and-normals)
-- [3D Workshop](#3d-workshop)
-- [Files, assets and presets](#files-assets-and-presets)
-- [Local MCP control](#local-mcp-control)
-- [Troubleshooting](#troubleshooting)
-- [Licence and privacy](#licence-and-privacy)
-
-## Installation and first launch
-
-1. Download the Windows x64 archive from a link provided by Orion4D and extract the entire archive to a folder where you have write access.
-2. Run `Orion4D-Halftone-Studio-Portable-2.0.0.exe`. The executable includes the Electron runtime and runs without a separate installation of Python, Node.js or Electron.
-3. Keep the `models/` folder next to the executable to use background removal and depth map generation offline.
-4. In **General Settings**, choose the language, interface scale from 80% to 130%, export destination and filename suffix. Click **Save settings.json** to save these preferences.
-
-To update an installation, extract the new package to a new folder, then copy across any presets, fonts, custom SVGs and settings you want to keep. Open saved projects from the **File** menu. If you use MCP, copy the configuration from the new installation.
-
-## Preparing an image
-
 1. Select **Single Image**, then **Open / Replace Image**. Supported formats include PNG, JPEG, WebP, SVG and compatible PSD files. For PSD files, the available import options depend on the file contents.
 2. Use **Input size** to choose the working dimensions before processing. You can keep the original size, scale by a percentage or set the longest side to a fixed value from 1,024 to 8,192 px. Resizing preserves the aspect ratio and alpha channel. The document keeps the original source image. Resized inputs are capped at 8,192 px on the longest side.
 3. Use **B&W Retouch** to adjust brightness, contrast, structure, black and white points, the tone curve and colour sensitivity. Use **Before / After** to compare the result with the source.
